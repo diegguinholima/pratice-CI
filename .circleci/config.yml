@@ -16,8 +16,8 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - run: echo world $NAME
-            environment:
-              NAME: diego
+          environment:
+            NAME: diego
 workflows:
   # Name the workflow "welcome"
   welcome:
