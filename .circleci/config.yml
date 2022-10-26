@@ -15,9 +15,11 @@ jobs:
     docker:
       - image: circleci/node:13.8.0
     steps:
-      - run: echo world $NAME
+      - run:
+          name: "just setting my name" 
+          command: echo world $MY_NAME
           environment:
-            NAME: diego
+            MY_NAME: diego
 workflows:
   # Name the workflow "welcome"
   welcome:
